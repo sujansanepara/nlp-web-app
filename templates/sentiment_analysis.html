@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analysis</title>
+</head>
+<body>
+
+  <form action="/perform_sentiment_analysis" method="post">
+      <label>Type your text here</label><br>
+      <textarea name="sentiment_analysis_text"></textarea><br>
+      <input type="submit" value="Perform Sentiment Analysis"><br>
+  </form>
+
+  {% if response %}
+    <p>Sentiment -> {{response['sentiment']}}</p>
+    <p>Score -> {{response['score']}}</p>
+  {% endif %}
+
+  <br><li><a href="/logout">Logout</a></li>
+</body>
+</html>
