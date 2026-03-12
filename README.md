@@ -6,7 +6,7 @@ A simple NLP web application built with Flask that allows users to perform Senti
 
 - User Registration
 - User Login
-- Sentiment Analysis using API-Ninjas API
+- Sentiment Analysis using API
 - Flask based backend
 - JSON based database
 
